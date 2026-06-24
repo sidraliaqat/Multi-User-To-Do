@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow · Multi‑User To‑Do</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app-container" id="app">
+  <div class="app-header">
+    <h1><i class="fas fa-users"></i> TaskFlow</h1>
+    <div class="stats">
+      <span class="pending-count"><i class="fas fa-circle"></i> Pending: <strong id="pendingCount">0</strong></span>
+      <span class="completed-count"><i class="fas fa-check-circle"></i> Done: <strong id="completedCount">0</strong></span>
+    </div>
+  </div>
+
+  <div class="user-section">
+    <div class="user-row">
+      <input type="text" id="userInput" placeholder="Add user name..." maxlength="30" />
+      <button id="addUserBtn"><i class="fas fa-user-plus"></i> Add User</button>
+      <button id="resetUsersBtn" class="secondary"><i class="fas fa-undo-alt"></i> Reset</button>
+    </div>
+    <div class="user-chips" id="userChips"></div>
+    <div class="user-stats">
+      <span class="total-users">
+        <i class="fas fa-users"></i> Total Users: <strong id="totalUsersCount">0</strong>
+      </span>
+    </div>
+  </div>
+
+  <div class="filter-bar" id="filterBar">
+    <button class="filter-btn active" data-filter="all">All</button>
+  </div>
+
+  <div class="input-row">
+    <input type="text" id="taskInput" placeholder="What do you need to do?" maxlength="120" />
+    <select id="taskUserSelect">
+      <option value="">— assign to —</option>
+    </select>
+    <button id="addBtn"><i class="fas fa-plus"></i> Add</button>
+  </div>
+
+  <ul class="task-list" id="taskList"></ul>
+
+  <div class="app-footer">
+    <span id="taskCount">0 tasks</span>
+    <button id="clearCompletedBtn"><i class="fas fa-trash-alt"></i> Clear completed</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
