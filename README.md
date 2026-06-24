@@ -26,7 +26,7 @@ A beautiful, multi-user task management application with local storage persisten
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://sidraliaqat.github.io/multi-user-to-do)
+https://sidraliaqat.github.io/Multi-User-To-Do/
 
 ## 🛠️ Technologies Used
 
