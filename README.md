@@ -2,7 +2,7 @@
 
 A beautiful, multi-user task management application with local storage persistence.
 
-![TaskFlow Screenshot](Screenshot 2026-06-24 125354.png)
+![TaskFlow Screenshot](screenshot.png)
 
 ## ✨ Features
 
